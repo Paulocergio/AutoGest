@@ -37,10 +37,8 @@ O projeto segue os princípios de **Clean Architecture**, garantindo que o códi
 ---
 
 ## 👨‍💻 Desenvolvedor
-**Paulo Sérgio de Almeida Costa Júnior**
-*   **Profissão:** Junior Systems Analyst no Banco Mercantil.
-*   **Foco:** Especialização em Full-Stack Development e Integrações com IA.
-*   **Projetos de Referência:** MotoGuest (Oficina) e JJCapacetes (E-commerce).
+**Paulo Cérgio de Almeida Costa Júnior**
+
 
 ---
 
