@@ -1,0 +1,43 @@
+# Build outputs
+**/bin/
+**/obj/
+
+# User-specific files
+*.user
+*.suo
+.vs/
+*.DotSettings.user
+
+# Rider / JetBrains
+.idea/
+*.sln.iml
+
+# VS Code
+.vscode/
+
+# Environment & secrets
+.env
+.env.local
+appsettings.Development.json
+appsettings.Local.json
+
+# Node / Frontend
+node_modules/
+dist/
+.next/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# NuGet
+*.nupkg
+packages/
+
+# Claude local settings (tokens pessoais)
+.claude/settings.local.json
+.mcp.json
+
+# MCP server configs (contêm tokens de API)
+server-notion/
+server-jira/

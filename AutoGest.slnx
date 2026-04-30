@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/AutoGest.API/AutoGest.API.csproj" />
+    <Project Path="src/AutoGest.Application/AutoGest.Application.csproj" />
+    <Project Path="src/AutoGest.Domain/AutoGest.Domain.csproj" />
+    <Project Path="src/AutoGest.Infrastructure/AutoGest.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/AutoGest.Tests/AutoGest.Tests.csproj" />
+  </Folder>
+</Solution>
