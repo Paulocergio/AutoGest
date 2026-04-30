@@ -1,50 +1,50 @@
-🛠 AutoGest SaaS - Oficina Mecânica Inteligente
-🎯 Sobre o Projeto
-O AutoGest é um ecossistema SaaS Multi-tenant projetado para modernizar a gestão de oficinas mecânicas. Este projeto está sendo desenvolvido como uma plataforma de aprendizado intensivo, focada na aplicação de IA 100% autônoma e metodologias avançadas de engenharia de software.
+# 🛠 AutoGest SaaS - Oficina Mecânica Inteligente
 
-O objetivo principal é dominar o ciclo de vida de um software complexo, garantindo isolamento de dados entre oficinas e uma arquitetura escalável.
+## 🎯 Sobre o Projeto
+O **AutoGest** é um ecossistema **SaaS Multi-tenant** projetado para modernizar a gestão de oficinas mecânicas. Este projeto nasceu do desejo de dominar as tecnologias mais avançadas do mercado, unindo o desenvolvimento de software robusto com a eficiência da Inteligência Artificial.
 
-🚀 Metodologia: SDD (Spec-Driven Development)
-Diferente do desenvolvimento tradicional, este projeto utiliza o SDD. Isso significa que nenhuma linha de código é escrita sem antes ter uma especificação técnica rigorosa.
+Este projeto é uma jornada de aprendizado prático, onde cada funcionalidade é construída para garantir isolamento de dados entre diferentes oficinas e uma arquitetura de nível empresarial.
 
-Por que SDD?
-Aprendizado Guiado: A especificação atua como um contrato, forçando a compreensão das regras de negócio antes da implementação.
+---
 
-IA-First: O Claude Code utiliza as specs/ para gerar código preciso, eliminando alucinações e garantindo que o sistema siga os padrões de Clean Architecture.
+## 🚀 Metodologia: SDD (Spec-Driven Development)
+O diferencial deste sistema é a aplicação do **Spec-Driven Development (SDD)**. Nenhuma linha de código é gerada por acaso. O fluxo segue um contrato técnico rigoroso:
 
-Rastreabilidade: Cada funcionalidade nasce de uma Spec, gera tarefas no Jira e é documentada no Notion de forma automática via MCP (Model Context Protocol).
+1.  **OpenSpec:** Definição clara de requisitos e esquemas de dados em arquivos de especificação (`specs/`) antes da codificação.
+2.  **IA 100% Autônoma:** Uso do **Claude Code** para interpretar as especificações e transformar requisitos em código funcional sem intervenção manual constante.
+3.  **Sincronização via MCP (Model Context Protocol):**
+    *   **Jira (ConnectaSys):** Criação automática de tarefas e acompanhamento de backlog diretamente da especificação.
+    *   **Notion:** Registro automático do diário de bordo e documentação técnica para consulta futura.
 
-🛠 Stack Tecnológica
-Backend: .NET 8 (C#) com Clean Architecture.
+---
 
-Banco de Dados: SQL Server com Entity Framework Core.
+## 🛠 Stack Tecnológica
+*   **Backend:** .NET 8 (C#) utilizando Clean Architecture.
+*   **Banco de Dados:** SQL Server com Entity Framework Core.
+*   **Frontend:** React + Tailwind CSS.
+*   **Ferramentas de IA:** Claude Code, MCP Servers e OpenSpec.
+*   **Gestão e Docs:** Jira (Backlog) e Notion (Wiki).
 
-Frontend: React + Tailwind CSS.
+---
 
-Gestão: Jira (Backlog Automatizado).
+## 🏗 Arquitetura & Regras de Ouro
+O projeto segue os princípios de **Clean Architecture**, garantindo que o código seja testável e fácil de manter:
 
-Documentação: Notion (Wiki Técnica).
+*   **Multi-tenancy:** Implementação de `TenantId` em todas as entidades para garantir que uma oficina nunca acesse os dados de outra.
+*   **Segurança:** Uso de **BCrypt** para proteção de senhas e validações rigorosas com **FluentValidation**.
+*   **Padrão de Código:** Código e variáveis em Inglês; tarefas e documentação em Português para agilidade no aprendizado.
 
-IA: Claude Code com MCP Servers (Atlassian & Notion).
+---
 
-🏗 Arquitetura do Sistema
-O sistema segue os princípios da Clean Architecture, dividindo-se em:
+## 👨‍💻 Desenvolvedor
+**Paulo Sérgio de Almeida Costa Júnior**
+*   **Profissão:** Junior Systems Analyst no Banco Mercantil.
+*   **Foco:** Especialização em Full-Stack Development e Integrações com IA.
+*   **Projetos de Referência:** MotoGuest (Oficina) e JJCapacetes (E-commerce).
 
-Domain: Entidades de negócio e interfaces fundamentais.
+---
 
-Application: Casos de uso, DTOs e validações com FluentValidation.
-
-Infrastructure: Persistência de dados, configurações do SQL Server e Migrations.
-
-API: Pontos de extremidade RESTful e documentação Swagger.
-
-Nota de Multi-tenancy: O sistema utiliza Global Query Filters para garantir que uma oficina nunca acesse os dados de outra, utilizando o campo TenantId em todas as transações.
-
-🔄 Fluxo de Desenvolvimento
-Escrita da Spec: Documentação em specs/*.md detalhando o comportamento desejado.
-
-Sincronização MCP: O Claude lê a Spec e cria automaticamente os cards no quadro ConnectaSys no Jira.
-
-Implementação Autônoma: O código é gerado seguindo a Spec, respeitando as "Regras de Ouro" do arquivo CLAUDE.md.
-
-Registro de Lições: Documentação no Notion sobre os desafios e soluções encontradas no processo.
+## 📝 Como este projeto é desenvolvido
+Para manter o aprendizado acelerado e o código limpo, utilizo o comando de aprovação automática da IA:
+```bash
+claude --auto-approve
